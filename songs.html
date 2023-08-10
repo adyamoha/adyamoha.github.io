@@ -51,8 +51,10 @@
 <body>
 
 
-<p id="prompt">enter password</p>
-<input type="password" id="password-input" placeholder="Enter the password" onkeypress="checkPassword(event)">
+<div style="display: flex; align-items: center;">
+    <p id="prompt" style="margin-right: 10px;">enter password:</p>
+    <input type="password" id="password-input" onkeypress="checkPassword(event)">
+</div>
 
 <div id="content" style="opacity: 0;">
     <h1>Songs!</h1>
