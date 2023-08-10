@@ -3,7 +3,7 @@
 <head>
     <title>Songs</title>
     <style>
-        /* Existing styles */
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -11,7 +11,7 @@
             background-color: #f0f0f0;
         }
         
-        /* New styles for input box */
+        /* input box */
         #password-input {
             display: block;
             margin-bottom: 10px;
@@ -20,16 +20,16 @@
             border-radius: 3px;
         }
         
-        /* Other existing styles */
+        /* block content initially*/
         #content {
             display: none;
-            /* other styles */
+           
         }
     </style>
     <script>
         function checkPassword() {
             const inputPassword = document.getElementById("password-input").value;
-            const correctPassword = "canthurry"; // Replace with your actual password
+            const correctPassword = "canthurry"; 
             
             if (inputPassword === correctPassword) {
                 document.getElementById("password-input").style.display = "none"; // Hide input box
@@ -37,19 +37,20 @@
                 document.getElementById("content").style.display = "block"; // Show content
             } else {
                 alert("Incorrect password. Access denied.");
-                window.location.href = "index.html"; // Redirect to main page
+                window.location.href = "index.html"; // redirect to main page
             }
         }
     </script>
 </head>
 <body>
 
-<h1>Welcome to the Protected Page</h1>
-
+<p>Enter password</p>
 <input type="password" id="password-input" placeholder="Enter the password">
 <button id="submit-button" onclick="checkPassword()">Submit</button>
 
 <div id="content" style="display: none;">
+    <h1>Songs!</h1>
+
     <h2>Protected Content</h2>
     <p>This content is protected and will only be displayed after entering the correct password.</p>
 </div>
