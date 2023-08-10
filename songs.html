@@ -3,9 +3,27 @@
 <head>
     <title>Protected Page</title>
     <style>
+        /* Existing styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        /* New styles for input box */
         #password-input {
             display: block;
             margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        /* Other existing styles */
+        #content {
+            display: none;
+            /* other styles */
         }
     </style>
     <script>
@@ -14,7 +32,8 @@
             const correctPassword = "canthurry"; // Replace with your actual password
             
             if (inputPassword === correctPassword) {
-                document.getElementById("content").style.display = "block";
+                document.getElementById("password-input").style.display = "none"; // Hide input box
+                document.getElementById("content").style.display = "block"; // Show content
             } else {
                 alert("Incorrect password. Access denied.");
                 window.location.href = "index.html"; // Redirect to main page
