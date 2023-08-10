@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>songs</title>
     <style>
@@ -28,7 +28,7 @@
     </style>
     <script>
         function checkPassword(event) {
-            if (event.key === "Enter" || event === "clicked") { //allows hitting enter to submit as well
+            if (event.key === "Enter" ) { //allows hitting enter to submit as well
                 const inputPassword = document.getElementById("password-input").value;
                 const correctPassword = "canthurry"; 
                 
@@ -50,7 +50,6 @@
 
 <p id="prompt">enter password</p>
 <input type="password" id="password-input" placeholder="Enter the password" onkeypress="checkPassword(event)">
-<button id="submit-button" onclick="checkPassword('clicked')">Submit</button>
 
 <div id="content" style="opacity: 0;">
     <h1>Songs!</h1>
