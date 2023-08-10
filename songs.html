@@ -34,6 +34,7 @@
             if (inputPassword === correctPassword) {
                 document.getElementById("password-input").style.display = "none"; // Hide input box
                 document.getElementById("submit-button").style.display = "none"; // Hide submit button
+                document.getElementById("prompt").style.display = "none"; // Hide submit button
                 document.getElementById("content").style.display = "block"; // Show content
             } else {
                 alert("Incorrect password. Access denied.");
@@ -44,7 +45,7 @@
 </head>
 <body>
 
-<p>Enter password</p>
+<p id="prompt">Enter password</p>
 <input type="password" id="password-input" placeholder="Enter the password">
 <button id="submit-button" onclick="checkPassword()">Submit</button>
 
