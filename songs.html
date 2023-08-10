@@ -1,71 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fancy Button</title>
-    //check pass function 
-    <script>
-            function checkPassword() {
-                const password = prompt("Enter the password:");
-                
-                if (password === "canthurry") {
-                    // password correct, show content
-                    document.getElementById("content").style.display = "block";
-                } else {
-                    alert("Incorrect password. Access denied.");
-                    window.location.href = "index.html"; // Redirect to main page
-                }
-            }
-        </script>
-    
-    //button styling
+    <title>Protected Page</title>
     <style>
-        .fancy-button {
-            display: inline-block;
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
+        #password-input {
+            display: block;
+            margin-bottom: 10px;
         }
-        .fancy-button:hover {
-            background-color: #2980b9;
+    </style>
+    <script>
+        function checkPassword() {
+            const inputPassword = document.getElementById("password-input").value;
+            const correctPassword = "canthurry"; // Replace with your actual password
+            
+            if (inputPassword === correctPassword) {
+                document.getElementById("content").style.display = "block";
+            } else {
+                alert("Incorrect password. Access denied.");
+                window.location.href = "index.html"; // Redirect to main page
+            }
         }
-    </style> 
-
+    </script>
 </head>
-<body onload="checkPassword()">
-<div id="content" style="display: none;">
-    <a href="index.html">
-    <button class="fancy-button">Click Me</button>
-    </a>
-        
-<h1>Simple Table Example</h1>
+<body>
 
-<table border="1">
-    <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-        <th>Header 3</th>
-    </tr>
-    <tr>
-        <td>Row 1, Cell 1</td>
-        <td>Row 1, Cell 2</td>
-        <td>Row 1, Cell 3</td>
-    </tr>
-    <tr>
-        <td>Row 2, Cell 1</td>
-        <td>Row 2, Cell 2</td>
-        <td>Row 2, Cell 3</td>
-    </tr>
-    <tr>
-        <td>Row 3, Cell 1</td>
-        <td>Row 3, Cell 2</td>
-        <td>Row 3, Cell 3</td>
-    </tr>
-</table>
+<h1>Welcome to the Protected Page</h1>
+
+<input type="password" id="password-input" placeholder="Enter the password">
+<button onclick="checkPassword()">Submit</button>
+
+<div id="content" style="display: none;">
+    <h2>Protected Content</h2>
+    <p>This content is protected and will only be displayed after entering the correct password.</p>
 </div>
 
 </body>
