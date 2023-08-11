@@ -55,3 +55,21 @@
         .table {
           color:#35013b
         }
+
+        @keyframes shake { /* incorreckt shake animation */
+          25% {
+            transform: translateX(5px);
+          }
+        
+          50% {
+            transform: translateX(-5px);
+          }
+        
+          75% {
+            transform: translateX(5px);
+          }
+        
+          100% {
+            transform: translateX-(5px);
+          }
+        }
