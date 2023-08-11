@@ -51,3 +51,7 @@
             opacity: 0; /*initial opacity*/
             transition: opacity 2s ease-in-out; /* fade in */
         }
+
+        .table {
+          color:#35013b
+        }
