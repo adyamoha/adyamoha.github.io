@@ -12,7 +12,6 @@
                 
                 if (inputPassword === correctPassword) {
                     document.getElementById("password-input").style.display = "none"; // Hide input box
-                    document.getElementById("prompt").style.display = "none";
                     document.getElementById("content").style.opacity = 1; // fade in content
                 } else {
                     alert("Incorrect password. Access denied.");
@@ -25,10 +24,10 @@
 <body>
 
 
-<div style="display: flex; align-items: center;">
-    <p id="prompt" style="margin-right: 10px;">enter password:</p>
+<div>    
     <input class = "input" name = "text" placeholder = "password" type="password" id="password-input" onkeypress="checkPassword(event)">
 </div>
+
 <main>
 <div id="content" style="opacity: 0;">
     <h1>Songs!</h1>
