@@ -14,11 +14,11 @@
         /* input box */
        
         .input {
-            --input-focus: #2d8cf0;
-            --font-color: #fefefe;
-            --font-color-sub: #7e7e7e;
-            --bg-color: #111111;
-            --main-color: #fefefe;
+            --input-focus: #f5149b;
+            --font-color: #fdf1ec;
+            --font-color-sub: #5b0264;
+            --bg-color: #35013b;
+            --main-color: #fdf1ec;
             width: 200px;
             height: 40px;
             border-radius: 5px;
