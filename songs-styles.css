@@ -14,23 +14,26 @@
         /* input box */
        
         .input {
+            align-items: center; /* vertically center content */
+            justify-content: center; /* horizontally center content */
             --input-focus: #f5149b;
             --font-color: #fdf1ec;
             --font-color-sub: #b404c8;
             --bg-color: #35013b;
             --main-color: #fdf1ec;
-            width: 200px;
-            height: 40px;
-            border-radius: 5px;
-            border: 2px solid var(--main-color);
+            width: 400px;
+            height: 80px;
+            border-radius: 10px;
+            border: 4px solid var(--main-color);
             background-color: var(--bg-color);
-            box-shadow: 4px 4px var(--main-color);
-            font-size: 15px;
+            box-shadow: 8px 8px var(--main-color);
+            font-size: 30px;
             font-weight: 600;
             color: var(--font-color);
-            padding: 5px 10px;
+            padding: 10px 20px;
             outline: none;
             margin: 0 auto;
+            
           }
           
           .input::placeholder {
@@ -40,7 +43,7 @@
           }
           
           .input:focus {
-            border: 2px solid var(--input-focus);
+            border: 4px solid var(--input-focus);
           }
         
         /* protected content */
