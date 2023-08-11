@@ -33,6 +33,7 @@
           }
           
           .input::placeholder {
+            font-family: Optima, sans-serif;
             color: var(--font-color-sub);
             opacity: 0.8;
           }
