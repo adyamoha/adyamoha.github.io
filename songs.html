@@ -2,35 +2,8 @@
 <html lang="en">
 <head>
     <title>songs</title>
-    <style>
-       
-        body {
-            font-family: Optima, sans-serif;
-            color: #35013b;
-            margin: 0;
-            padding: 0;
-            background-color: #fcc5f1;
-            display: flex; /* flexbox for centering */
-            align-items: center; /* vertically center content */
-            justify-content: center; /* horizontally center content */
-            min-height: 100vh; /* Ensure content is at least full viewport height */
-        }
-        
-        /* input box */
-        #password-input {
-            display: block;
-            margin-bottom: 10px;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-        
-        /* protected content */
-        #content {
-            opacity: 0; /*initial opacity*/
-            transition: opacity 2s ease-in-out; /* fade in */
-        }
-    </style>
+    <link rel="stylesheet" href="songs-styles.css">
+    
     <script>
         function checkPassword(event) {
             if (event.key === "Enter" ) { //allows hitting enter to submit as well
