@@ -30,6 +30,7 @@
             color: var(--font-color);
             padding: 5px 10px;
             outline: none;
+            margin: 0 auto;
           }
           
           .input::placeholder {
