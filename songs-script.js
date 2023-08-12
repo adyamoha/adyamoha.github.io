@@ -1,5 +1,6 @@
 // songs-script.js
 document.getElementById("password-input").addEventListener("keydown", function(event) {
+    console.log("Key pressed:", event.key);
     if (event.key === "Enter") {
         const inputPassword = this.value;
         const correctPassword = "canthurry";
