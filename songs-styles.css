@@ -11,6 +11,19 @@
             min-height: 100vh; /* Ensure content is at least full viewport height */
         }
 
+        header {
+          background-color: #240128;
+          color: #fdf1ec;
+          padding: 10px;
+          text-align: center;
+      }
+      nav {
+          background-color: #480250;
+          color: #fdf1ec;
+          padding: 10px;
+          text-align: center;
+      }
+
 
         #password-container {
           position: absolute;
