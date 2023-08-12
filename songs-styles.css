@@ -10,12 +10,22 @@
             justify-content: center; /* horizontally center content */
             min-height: 100vh; /* Ensure content is at least full viewport height */
         }
-        
+
+
+        #password-container {
+          position: absolute;
+          top: 50%; /* Vertically center */
+          left: 50%; /* Horizontally center */
+          transform: translate(-50%, -50%);
+          text-align: center; /* Optional: To center the input within the container */
+          z-index: 1; /* Ensure it's above the hidden content */
+          opacity: 1; /* Keep it visible */
+          pointer-events: auto; /* Enable interaction */
+      }
+
         /* input box */
        
         .input {
-            align-items: center; /* vertically center content */
-            justify-content: center; /* horizontally center content */
             --input-focus: #f5149b;
             --font-color: #fdf1ec;
             --font-color-sub: #b404c8;
