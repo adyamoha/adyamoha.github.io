@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
             if (inputPassword === correctPassword) {
                 document.getElementById("password-input").classList.remove("shake");
+                document.getElementById("password-container").style.display = "none";
                 document.getElementById("content").style.opacity = 1;
             } else {
                 document.getElementById("password-input").classList.add("shake");
