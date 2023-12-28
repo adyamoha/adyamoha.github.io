@@ -1,106 +1,116 @@
+body {
+  font-family: Optima, sans-serif;
+  color: #35013b;
+  margin: 0;
+  padding: 0;
+  background-color: #fcc5f1;
+}
 
-        body {
-          font-family: Optima, sans-serif;
-          color: #35013b;
-          margin: 0;
-          padding: 0;
-          background-color: #fcc5f1;
-        }
-
-        .page-container {
-          display: flex;
-          flex-direction: column;
-          
-        
-          min-height: 100vh;
-          margin: 0;
-        }
-
-        header {
-          background-color: #240128;
-          color: #fdf1ec;
-          padding: 10px;
-          text-align: center;
-          margin: 0;
-        }
-
-        nav {
-          background-color: #480250;
-          color: #fdf1ec;
-          padding: 10px;
-          text-align: center;
-          margin: 0;
-        }
+.page-container {
+  display: flex;
+  flex-direction: column;
 
 
-      #password-container {
-        position: absolute;
-        top: 50%; /* Vertically center */
-        left: 50%; /* Horizontally center */
-        transform: translate(-50%, -50%);
-        text-align: center; /* Optional: To center the input within the container */
-        z-index: 1; /* Ensure it's above the hidden content */
-        opacity: 1; /* Keep it visible */
-        pointer-events: auto; /* Enable interaction */
-    }
+  min-height: 100vh;
+  margin: 0;
+}
 
-      /* input box */
-     
-      .input {
-          --input-focus: #f5149b;
-          --font-color: #fdf1ec;
-          --font-color-sub: #b404c8;
-          --bg-color: #35013b;
-          --main-color: #fdf1ec;
-          width: 400px;
-          height: 80px;
-          border-radius: 10px;
-          border: 4px solid var(--main-color);
-          background-color: var(--bg-color);
-          box-shadow: 8px 8px var(--main-color);
-          font-size: 30px;
-          font-weight: 600;
-          color: var(--font-color);
-          padding: 10px 20px;
-          outline: none;
-          margin: 0 auto;
-          
-        }
-        
-        .input::placeholder {
-          font-family: Optima, sans-serif;
-          color: var(--font-color-sub);
-          opacity: 0.8;
-        }
-        
-        .input:focus {
-          border: 4px solid var(--input-focus);
-        }
-      
-      /* protected content */
-      #content {
-          opacity: 0; /*initial opacity*/
-          transition: opacity 2s ease-in-out; /* fade in */
-      }
+header {
+  background-color: #240128;
+  color: #fdf1ec;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
 
-      .table {
-        color:#35013b
-      }
+nav {
+  background-color: #480250;
+  color: #fdf1ec;
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
 
-      @keyframes shake { /* incorreckt shake animation */
-        25% {
-          transform: translateX(5px);
-        }
-      
-        50% {
-          transform: translateX(-5px);
-        }
-      
-        75% {
-          transform: translateX(5px);
-        }
-      
-        100% {
-          transform: translateX(-5px);
-        }
-      }
+
+#password-container {
+  position: absolute;
+  top: 50%;
+  /* Vertically center */
+  left: 50%;
+  /* Horizontally center */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* Optional: To center the input within the container */
+  z-index: 1;
+  /* Ensure it's above the hidden content */
+  opacity: 1;
+  /* Keep it visible */
+  pointer-events: auto;
+  /* Enable interaction */
+}
+
+/* input box */
+
+.input {
+  --input-focus: #f5149b;
+  --font-color: #fdf1ec;
+  --font-color-sub: #b404c8;
+  --bg-color: #35013b;
+  --main-color: #fdf1ec;
+  width: 400px;
+  height: 80px;
+  border-radius: 10px;
+  border: 4px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 8px 8px var(--main-color);
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 10px 20px;
+  outline: none;
+  margin: 0 auto;
+
+}
+
+.input::placeholder {
+  font-family: Optima, sans-serif;
+  color: var(--font-color-sub);
+  opacity: 0.8;
+}
+
+.input:focus {
+  border: 4px solid var(--input-focus);
+}
+
+/* protected content */
+#content {
+  opacity: 0;
+  /*initial opacity*/
+  transition: opacity 2s ease-in-out;
+  /* fade in */
+  align-items: center;
+}
+
+.table {
+  color: #35013b
+}
+
+@keyframes shake {
+
+  /* incorreckt shake animation */
+  25% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(-5px);
+  }
+}
